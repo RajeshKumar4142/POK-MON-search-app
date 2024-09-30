@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon Search</title>
+</head>
+<body>
+    <div class="container pokemon_store">
+        <p class="text_p">Search POKÉMON in the input box:</p>
+        <p>
+            Name: 
+            <input type="text" 
+                   id="pokemonName" 
+                   placeholder="Enter Pokémon name here" 
+                   autocomplete="off">
+            <button onclick="fetchData()">Search</button>
+        </p>
+        <ul class="suggestions-list" style="display: none;"></ul> <!-- Suggestions list -->
+        <img src="" alt="pokemon_image" id="pokemon_image" style="display: none;">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
